@@ -212,3 +212,51 @@ section .task-column .task button{
     cursor: pointer;
     border-radius: var(--border-radius-s);
 }
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Nav */
+    nav {
+        flex-direction: row;   /* same as desktop */
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--padding-m);
+    }
+
+    /* Board layout */
+    section {
+        flex-direction: column;
+        gap: var(--padding-l);
+        padding: var(--padding-m);
+    }
+
+    section .task-column {
+        width: 100%;
+    }
+
+    /* Task text */
+    section .task-column .task h1 {
+        font-size: 1rem;
+    }
+
+    section .task-column .task p {
+        font-size: 0.9rem;
+    }
+
+    /* Modal */
+    .modal .center {
+        width: 90%;
+        padding: var(--padding-l);
+    }
+
+    .modal .center input,
+    .modal .center textarea,
+    .modal .center button {
+        width: 100%;
+    }
+}
+
